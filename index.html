@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- this coode of line is for internet explorer to use the latest rendering engine so that the page will be rendered correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard App</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class=""nav>
+                <h1>Flashcards Web App</h1>
+                <div>
+                    <button onclick="showCreateCardBox()">New Card</button>
+                    <button onclick="delFlashCards()">Delete Cards</button>
+                </div>
+        </div>
+    </header>
+    <div class ="container">
+        <div class="create-box">
+            <h2 style="text-align: center;color: black;">Create New Flashcard</h2>
+            <label for=""question">Question</label>
+            <textarea id ="question" placeholder="Enter Question"></textarea>
+            <hr>
+            <label for="answer">Answer</label>
+            <textarea id="answer" placeholder="Enter Answer"></textarea>
+            <div>
+                <button onclick="addFlashcard()">Save</button>
+                <button onclick="hideCreateBox()">Close</button>
+            </div>
+        </div>
+        <div class="flashcards"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
